@@ -251,8 +251,81 @@ a {
   border-radius: 2px;
 }
 
+.results-info {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #fefefe;
+}
+
+.results-amount {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.results-sorting {
+  list-style: none;
+}
+
+.results-sorting-active {
+  color: #81b3d2;
+}
+
+.results-sorting-inactive {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.results-sorting-inactive:hover,
+.results-sorting-inactive:focus {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.results-sorting-inactive:active {
+  color: #000000;
+  border: none;
+}
+
+.hotels-list {
+  background-color: #fefefe;
+}
+
+.hotel-name {
+  font-size: 21px;
+  color: #000000;
+}
+
+.hotel-name:hover,
+.hotel-name:focus {
+  color: #81b3d2;
+}
+
+.hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-description {
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.hotel-rating-info {
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
 .main-footer {
   background-color: #f9fbf6;
+}
+
+.inner-footer {
+  background-color: #fefefe;
 }
 
 .footer-sedona-tag {
