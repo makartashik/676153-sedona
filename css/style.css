@@ -165,3 +165,73 @@ a {
   font-weight: 400;
   background-color: transparent;
 }
+
+.modal-search-form {
+  background-color: #ffffff;
+}
+
+.search-form input[type="text"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-form input:hover {
+  background-color: #ebebeb;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.date-field-icon {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.people-amount-button {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.main-content-map {
+  background-image: url("../img/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-footer {
+  background-color: #f9fbf6;
+}
+
+.footer-sedona-tag {
+  font-size: 21px;
+}
+
+.footer-social {
+  text-align: center;
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.footer-copyright {
+  font-weight: 400;
+}
