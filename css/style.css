@@ -60,11 +60,18 @@ a {
 .main-content-intro-title {
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
 }
 
 .main-content-intro-tеxt {
   color: #333333;
   font-weight: 400;
+  text-align: center;
+}
+
+.feature-item-text,
+.feature-extra-item {
+  text-align: center;
 }
 
 .feature-item-text h3,
@@ -93,4 +100,18 @@ a {
 
 .feature-item-other {
   background-color: #eeeeee;
+}
+
+.search-section p {
+  color: #333333;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.search-section .search-section-title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
 }
