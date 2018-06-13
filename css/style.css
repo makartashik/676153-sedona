@@ -55,5 +55,42 @@ a {
   background-size: 1200px 58px, cover;
   background-position: bottom center, top center;
   background-repeat: no-repeat;
+}
 
+.main-content-intro-title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.main-content-intro-tеxt {
+  color: #333333;
+  font-weight: 400;
+}
+
+.feature-item-text h3,
+.feature-extra-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.feature-item-text span,
+.feature-item-text p,
+.feature-extra-item p {
+  color: #333333;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.feature-item-text-white {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.feature-item-text-white span,
+.feature-item-text-white p {
+  color: #ffffff;
+}
+
+.feature-item-other {
+  background-color: #eeeeee;
 }
