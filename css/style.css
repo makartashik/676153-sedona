@@ -16,3 +16,34 @@ body {
   background-color: #ffffff;
   box-shadow: 5px 0px 15px 0px rgba(0, 1, 1, 0.2);
 }
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-header-menu {
+  list-style: none;
+}
+
+.main-header-menu a {
+  color: #000000;
+}
+
+.main-header-menu a:hover,
+.main-header-menu a:focus {
+  color: #81b3d2;
+}
+
+.main-header-menu a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.main-header-menu-current a {
+  color: #766357;
+}
