@@ -380,10 +380,24 @@ a {
 }
 
 .results-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   background-color: #fefefe;
+}
+
+.results-container {
+  width: 525px;
+  margin-left: 6.08%;
+}
+
+.results-switch {
+  width: 100%;
+  text-align: right;
+  margin-right: 6.08%;
 }
 
 .results-amount {
