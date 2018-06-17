@@ -425,6 +425,11 @@ a {
 }
 
 .main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
   background-color: #f9fbf6;
 }
 
