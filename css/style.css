@@ -325,6 +325,7 @@ a {
   background-size: cover;
   background-position: center 15%;
   background-repeat: no-repeat;
+  margin-bottom: 30px;
 }
 
 .filters-form {
@@ -436,6 +437,7 @@ a {
   justify-content: space-between;
   width: 100%;
   background-color: #fefefe;
+  margin-bottom: 30px;
 }
 
 .hotels-list-item {
