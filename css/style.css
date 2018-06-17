@@ -193,11 +193,22 @@ a {
   background-color: #eeeeee;
 }
 
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 .search-section p {
   color: #333333;
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0 31.66%;
 }
 
 .search-section .search-section-title {
@@ -299,6 +310,8 @@ a {
 }
 
 .main-content-map {
+  width: 100%;
+  height: 473px;
   background-image: url("../img/map.png");
   background-size: cover;
   background-repeat: no-repeat;
