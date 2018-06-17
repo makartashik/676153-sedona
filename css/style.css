@@ -431,7 +431,15 @@ a {
 }
 
 .hotels-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   background-color: #fefefe;
+}
+
+.hotels-list-item {
+  margin-left: 6.08%;
 }
 
 .hotel-name {
@@ -460,6 +468,11 @@ a {
   color: #666666;
   text-align: center;
   background-color: #f2f2f2;
+}
+
+.hotels-list-item-rating {
+  text-align: right;
+  margin-right: 6.08%;
 }
 
 .main-footer {
