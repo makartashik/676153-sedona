@@ -154,11 +154,11 @@ a {
 }
 
 .feature-item-text {
-  width: 33.4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 33.4%;
 }
 
 .feature-item-picture {
@@ -217,8 +217,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  height: 331px;
+  min-height: 331px;
 }
 
 .feature-item-other {
@@ -357,7 +356,7 @@ a {
 
 .main-content-map {
   width: 100%;
-  height: 593px;
+  min-height: 593px;
   background-image: url("../img/map.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -365,13 +364,15 @@ a {
 }
 
 .filters {
-  height: 218px;
+  min-height: 218px;
   width: 100%;
   background-image: url("../img/filter-back.jpg");
   background-color: #4f5a61;
   background-size: cover;
   background-position: center 15%;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
 }
 
@@ -380,21 +381,18 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-
+  padding-left: 5.85%;
+  padding-right: 6%;
 }
 
 .filters-form-container {
   display: flex;
   flex-direction: row;
-  margin-left: 6.08%;
-}
-
-.filters-form-container2 {
-  margin-right: 6.08%;
 }
 
 .filters-form-item {
   border: none;
+  padding: 0;
 }
 
 .filters-form-item-title,
@@ -430,22 +428,21 @@ a {
 .results-info {
   display: flex;
   flex-direction: row;
-  width: 100%;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   background-color: #fefefe;
+  padding-left: 6%;
+  padding-right: 6.08%;
 }
 
 .results-container {
   width: 525px;
-  margin-left: 6.08%;
 }
 
 .results-switch {
   width: 100%;
   text-align: right;
-  margin-right: 6.08%;
 }
 
 .results-amount {
@@ -482,13 +479,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
   background-color: #fefefe;
   margin-bottom: 30px;
-}
-
-.hotels-list-item {
-  margin-left: 6.08%;
+  margin-top: 30px;
+  padding-left: 6.08%;
+  padding-right: 6.08%;
 }
 
 .hotel-name {
@@ -521,7 +516,6 @@ a {
 
 .hotels-list-item-rating {
   text-align: right;
-  margin-right: 6.08%;
 }
 
 .main-footer {
@@ -529,7 +523,6 @@ a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
   background-color: rgba(249, 251, 246, 0.9);
 }
 
