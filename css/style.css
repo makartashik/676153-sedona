@@ -29,7 +29,6 @@ a {
 .main-header {
   margin: 0 6%;
   padding: 0;
-  outline: 1px solid orange;
 }
 
 .main-navigation {
@@ -37,11 +36,10 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  color: #000000;
   margin: 0;
   padding: 0;
+  color: #000000;
   background-color: #ffffff;
-  outline: 1px dashed violet;
 }
 
 .main-header-logo {
@@ -54,15 +52,13 @@ a {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
-  padding: 17px 0;
+  padding: 15px 0 16px;
   margin: 0;
   list-style: none;
-  outline: 1px solid blue;
 }
 
 .main-header-menu li {
   width: 25%;
-  outline: 1px solid red;
 }
 
 .main-header-menu li:nth-child(2) {
@@ -80,11 +76,6 @@ a {
 
 .main-header-menu a {
   color: #000000;
-  outline: 1px solid green;
-}
-
-.main-header-menu a:first-child {
-  margin-left: 0;
 }
 
 .main-header-menu a:hover,
@@ -555,5 +546,9 @@ a {
 }
 
 .visually-hidden {
-  font-size: 0;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
