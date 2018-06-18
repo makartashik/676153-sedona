@@ -321,6 +321,10 @@ a {
   background-color: #ffffff;
 }
 
+.hotel-button {
+  padding: 5px 0;
+}
+
 .search-form {
   margin-bottom: -395px;
   background-color: #ffffff;
@@ -373,7 +377,6 @@ a {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
 }
 
 .filters-form {
@@ -428,16 +431,23 @@ a {
 .results-info {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 87px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   background-color: #fefefe;
+  margin: 0;
   padding-left: 6%;
   padding-right: 6.08%;
 }
 
 .results-container {
-  width: 525px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 535px;
 }
 
 .results-switch {
@@ -446,13 +456,20 @@ a {
 }
 
 .results-amount {
+  width: 164px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
 .results-sorting {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
+}
+
+.results-sorting-title {
+  margin-left: 30px;
 }
 
 .results-sorting-active {
@@ -480,15 +497,45 @@ a {
   flex-direction: column;
   justify-content: space-between;
   background-color: #fefefe;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 0;
+  padding: 0;
   padding-left: 6.08%;
   padding-right: 6.08%;
+  border: 1px solid #f2f2f2;
+}
+
+.hotels-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 152px;
 }
 
 .hotel-name {
   font-size: 21px;
   color: #000000;
+}
+
+.hotels-list-item img {
+  width: 134;
+  height: 90;
+}
+
+.hotel-description-container {
+  width: 535px;
+  min-height: 90px;
+  margin-left: 31px;
+}
+
+.hotel-description-container h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.hotels-list-item-rating {
+  width: 100%;
+  text-align: right;
+  padding-top: 64px;
 }
 
 .hotel-name:hover,
@@ -512,10 +559,7 @@ a {
   color: #666666;
   text-align: center;
   background-color: #f2f2f2;
-}
-
-.hotels-list-item-rating {
-  text-align: right;
+  vertical-align: bottom;
 }
 
 .main-footer {
