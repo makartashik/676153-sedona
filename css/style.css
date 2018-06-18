@@ -115,20 +115,26 @@ a {
 }
 
 .main-content-intro {
- width: 560px;
+ width: 570px;
+ margin: 0 auto;
+ padding: 0;
 }
 
 .main-content-intro-title {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
   padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .main-content-intro-tеxt {
   color: #333333;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .features {
@@ -142,8 +148,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  width: 100%;
-  height: 256px;
+  min-height: 256px;
   margin: 0;
   padding: 0;
 }
@@ -223,9 +228,16 @@ a {
 .search-section {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  min-height: 292px;
   margin: 0;
   padding: 0;
+  padding-top: 53px;
+}
+
+.search-section-container {
+  text-align: center;
 }
 
 .search-section p {
@@ -234,8 +246,9 @@ a {
   font-weight: 400;
   text-align: center;
   margin: 0;
-  margin-bottom: 50px;
-  padding: 0 31.66%;
+  padding: 0;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .search-section .search-section-title {
@@ -243,6 +256,11 @@ a {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.search-section .button-brown {
+  margin-top: 50px;
 }
 
 .button {
@@ -304,7 +322,8 @@ a {
   background-color: #ffffff;
 }
 
-.modal-search-form {
+.search-form {
+  margin-bottom: -395px;
   background-color: #ffffff;
 }
 
@@ -338,10 +357,11 @@ a {
 
 .main-content-map {
   width: 100%;
-  height: 473px;
+  height: 593px;
   background-image: url("../img/map.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: -121px;
 }
 
 .filters {
@@ -510,7 +530,7 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-color: #f9fbf6;
+  background-color: rgba(249, 251, 246, 0.9);
 }
 
 .inner-footer {
