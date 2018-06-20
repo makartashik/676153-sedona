@@ -129,6 +129,7 @@ a {
   line-height: 26px;
   text-align: center;
   margin: 0;
+  padding: 0;
   padding-top: 60px;
   padding-bottom: 30px;
 }
@@ -138,6 +139,7 @@ a {
   font-weight: 400;
   text-align: center;
   margin: 0;
+  padding: 0;
   margin-bottom: 54px;
 }
 
@@ -153,20 +155,26 @@ a {
   flex-direction: row;
   align-items: stretch;
   min-height: 256px;
-  margin: 0;
-  padding: 0;
 }
 
-.feature-item-text {
+.feature-extra {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-height: 331px;
+}
+
+.feature-item-text,
+.feature-extra-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 33.4%;
+  text-align: center;
 }
 
 .feature-item-picture {
-  width: 66.6%;
+  width: 66.7%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -174,21 +182,13 @@ a {
 
 .feature-item-picture1 {
   background-image: url("../img/feature-first.jpg");
+  background-color: #fbcbbf;
 }
 
 .feature-item-picture2 {
   background-image: url("../img/feature-second.jpg");
+  background-color: #e9b8a1;
   order: -1;
-}
-
-.feature-item-text,
-.feature-extra-item {
-  text-align: center;
-}
-
-.feature-item-text h3 {
-  padding-left: 31.25%;
-  padding-right: 31.25%;
 }
 
 .feature-item-text h3,
@@ -197,14 +197,60 @@ a {
   line-height: 21px;
 }
 
+.feature-item-text h3,
+.feature-item-text p,
+.feature-extra-item h3,
+.feature-extra-item p,
+.feature-extra-item img {
+  margin: 0;
+  padding: 0;
+}
+
 .feature-item-text span,
 .feature-item-text p,
 .feature-extra-item p {
   color: #333333;
   line-height: 21px;
   font-weight: 400;
-  padding-left: 14.75%;
-  padding-right: 14.75%;
+  padding-left: 14.45%;
+  padding-right: 14.45%;
+}
+
+.feature-item-text h3 {
+  padding: 48px 31% 24px 31%;
+}
+
+.feature-extra-item h3 {
+  padding-bottom: 24px;
+}
+
+.feature-bridge h3 {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.feature-item-text p {
+  padding-top: 22px;
+}
+
+.feature-bridge p {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.feature-item-text-other p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.feature-item-text-other:nth-child(3) p {
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
+.feature-extra-item img {
+  padding-top: 60px;
+  padding-bottom: 29px;
 }
 
 .feature-item-text-white {
@@ -215,13 +261,6 @@ a {
 .feature-item-text-white span,
 .feature-item-text-white p {
   color: #ffffff;
-}
-
-.feature-extra {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  min-height: 331px;
 }
 
 .feature-item-other {
