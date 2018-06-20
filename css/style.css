@@ -114,6 +114,10 @@ a {
   background-color: #2c3e45;
 }
 
+.main-content-banner img {
+  padding-top: 77px;
+}
+
 .main-content-intro {
  width: 570px;
  margin: 0 auto;
