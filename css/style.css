@@ -275,7 +275,7 @@ a {
   min-height: 292px;
   margin: 0;
   padding: 0;
-  padding-top: 53px;
+  padding-top: 50px;
 }
 
 .search-section-container {
@@ -289,8 +289,6 @@ a {
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-left: 20%;
-  padding-right: 20%;
 }
 
 .search-section .search-section-title {
@@ -298,7 +296,7 @@ a {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .search-section .button-brown {
@@ -322,6 +320,18 @@ a {
   line-height: 26px;
 }
 
+.search-section-button[type="button"] {
+  width: 568px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.search-section-button[type="submit"] {
+  width: 458px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+
+}
 .button-brown {
   background-color: #766357;
 }
