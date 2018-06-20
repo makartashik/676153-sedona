@@ -330,6 +330,7 @@ a {
   width: 458px;
   padding-top: 16px;
   padding-bottom: 17px;
+  margin-top: 55px;
 
 }
 .button-brown {
@@ -379,6 +380,12 @@ a {
 }
 
 .search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 568px;
+  min-height: 395px;
   margin-bottom: -395px;
   background-color: #ffffff;
 }
@@ -400,15 +407,90 @@ a {
   border: 2px solid #e5e5e5;
 }
 
+.date-field-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.date-field-container:first-child {
+  margin-top: 55px;
+}
+
+.people-amount-container,
+.people-amount-field-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.people-amount-container {
+  margin-top: 30px;
+}
+
+.date-field-label {
+  margin-right: 17px;
+  padding-top: 6px;
+}
+
+.people-amount-field-label {
+  margin-right: 40px;
+}
+
+.child-amount-label {
+  margin-right: 26px;
+  margin-left: 50px;
+}
+
+.date-field {
+  width: 283px;
+  padding: 6px 15px;
+}
+
 .date-field-icon {
   background-color: #f2f2f2;
   border: none;
 }
 
+.date-field-icon:hover path,
+.date-field-icon:focus path {
+  fill: #000000;
+}
+
+.date-field-icon:active path {
+  fill: #81b3d2;
+}
+
+.people-amount {
+  display: flex;
+  flex-direction: row;
+}
+
+.people-amount-field {
+  width: 39px;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .people-amount-button {
   font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  color: #a9a9a9;
+  width: 38px;
+  text-align: center;
   background-color: #f2f2f2;
   border: none;
+}
+
+.people-amount-button:hover,
+.people-amount-button:focus {
+  color: #000000;
+}
+
+.people-amount-button:active {
+  color: #81b3d2;
 }
 
 .main-content-map {
@@ -418,6 +500,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: -121px;
+  margin-top: -46px;
 }
 
 .filters {
