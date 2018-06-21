@@ -751,7 +751,31 @@ a {
 }
 
 .footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-copyright a {
+  width: 113px;
+  height: 43px;
+  margin-top: 10px;
+}
+
+.footer-copyright a:hover path,
+.footer-copyright a:focus path {
+  fill: #81b3d2;
+}
+
+.footer-copyright a:active path {
+  fill: #bdbbbc;
+}
+
+.footer-copyright svg {
+ margin-left: 8px;
 }
 
 .visually-hidden:not(:focus):not(:active),
