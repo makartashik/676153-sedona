@@ -715,13 +715,24 @@ a {
 }
 
 .footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 150px;
   text-align: center;
   list-style: none;
 }
 
 .social-button {
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .social-button:hover,
@@ -734,14 +745,25 @@ a {
   background-color: #5496bd;
 }
 
+.social-button:active path {
+  fill: #88b6d1;
+  opacity: 0.3;
+}
+
 .footer-copyright {
   font-weight: 400;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
