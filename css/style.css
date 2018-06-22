@@ -374,8 +374,8 @@ img {
 
 .filter-button {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0 26%;
+  padding: 6px 34px;
   line-height: 21px;
   font-weight: 400;
   background-color: transparent;
@@ -539,7 +539,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-height: 218px;
+  min-height: 217px;
   padding-left: 5.85%;
   padding-right: 6%;
 }
@@ -549,6 +549,8 @@ img {
   flex-direction: row;
   align-items: flex-start;
   width: 69%;
+  margin-top: 3px;
+  margin-right: 4%;
 }
 
 .filters-form-item {
@@ -560,7 +562,7 @@ img {
 }
 
 .filters-form-item:first-child {
-  margin-right: 15.5%;
+  margin-right: 16.5%;
 }
 
 .filters-form-item-title,
@@ -571,7 +573,7 @@ img {
 }
 
 .filters-form-item-title {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   padding-top: 19px;
 }
 
@@ -586,7 +588,7 @@ img {
   font-weight: 400;
   line-height: 21px;
   color: #ffffff;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   padding-left: 40px;
 }
 
@@ -614,8 +616,9 @@ img {
 
 .hotel-cost-container {
   width: 31%;
-  margin-left: 5%;
+
   margin-bottom: 9px;
+  margin-top: 3px;
 }
 
 .hotel-cost-title {
@@ -625,8 +628,8 @@ img {
 
 .price-controls {
   position: relative;
-  height: 36px;
-  margin-bottom: 20px;
+  height: 32px;
+  margin-bottom: 19px;
   margin-top: 10px;
   padding: 0;
   text-align: center;
@@ -648,10 +651,10 @@ img {
 
 .price-controls label {
   display: inline-block;
-  width: 33%;
+  width: 34%;
   padding: 0;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 30px;
   vertical-align: top;
   color: #ffffff;
   font-weight: 400;
@@ -660,11 +663,11 @@ img {
 
 .price-controls .max-price,
 .price-controls .min-price  {
-  padding-left: 12%;
+  padding-left: 13%;
 }
 
 .price-controls input {
-  width: 55%;
+  width: 56%;
   margin: 0;
   color: inherit;
   font: inherit;
@@ -676,7 +679,7 @@ img {
 
 .range-controls {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .range-controls .scale {
@@ -719,7 +722,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-height: 87px;
+  min-height: 86px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -756,11 +759,11 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 5px;
+
 }
 
 .results-sorting li {
-  margin-left: 33px;
+  margin-left: 35px;
 }
 .results-sorting-title {
   margin-left: 10px;
@@ -807,28 +810,29 @@ img {
   background-color: #fefefe;
   margin: 0;
   padding: 0;
-  padding-left: 6.08%;
-  padding-right: 6.08%;
-  border: 1px solid #f2f2f2;
+  border-top: 1px solid #e5e5e5;
 }
 
 .hotels-list-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-height: 152px;
+  min-height: 150px;
+  padding-left: 6.08%;
+  padding-right: 6.08%;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 
 .hotels-list-item img {
-  width: 134;
-  height: 90;
+  width: 135;
+  height: 93;
 }
 
 .hotel-description-container {
   width: 700px;
   min-height: 90px;
-  margin-left: 31px;
+  margin-left: 30px;
 }
 
 .hotel-description-container h3 {
@@ -845,8 +849,8 @@ img {
 .hotel-type {
   display: flex;
   flex-direction: row;
-  margin-top: 8px;
-  margin-bottom: 12px;
+  margin-top: 7px;
+  margin-bottom: 13px;
 }
 
 .hotel-description:first-child {
@@ -854,11 +858,14 @@ img {
 }
 
 .hotel-button {
-  padding: 5px 16px;
-  margin-right: 3px;
+  padding: 4px 17px 5px 16px;
+  margin-right: 2px;
   margin-top: 8px;
 }
 
+.hotel-button:nth-child(2) {
+  padding-left: 17px;
+}
 .hotels-list-item-rating {
   width: 100%;
   text-align: right;
@@ -887,23 +894,23 @@ img {
   color: #666666;
   text-align: center;
   background-color: #f2f2f2;
-  padding: 5px 15px;
+  padding: 4px 12px 5px 15px;
   vertical-align: bottom;
 }
 
 .hotel-rating-info::before {
   content: "";
   position: absolute;
-  top: -65px;
+  top: -64px;
   right: 0px;
-  width: 87px;
+  width: 89px;
   height: 17px;
   background-image: url("../img/icon-star.svg");
   background-repeat: space;
 }
 
 .hotel-rating-info-desert::before {
-  width: 64px;
+  width: 65px;
 }
 
 .hotel-rating-info-villas::before {
