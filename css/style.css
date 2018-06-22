@@ -281,7 +281,6 @@ img {
   min-height: 292px;
   margin: 0;
   padding: 0;
-  padding-top: 50px;
 }
 
 .search-section-container {
@@ -303,6 +302,7 @@ img {
   line-height: 36px;
   font-weight: 700;
   margin-bottom: 25px;
+  margin-top: 50px;
 }
 
 .search-section .button-brown {
@@ -392,16 +392,16 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: -121px;
-  margin-top: -46px;
 }
 
 .modal {
   color: #000000;
   background-color: #ffffff;
 }
+
 .modal-search-form {
   position: absolute;
-  top: 295px;
+  top: 294px;
   padding: 55px;
   width: 458px;
 }
