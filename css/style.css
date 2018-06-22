@@ -273,6 +273,7 @@ img {
 }
 
 .search-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -335,7 +336,7 @@ img {
   width: 458px;
   padding-top: 16px;
   padding-bottom: 17px;
-  margin-top: 55px;
+  margin-top: 24px;
 }
 
 .button-brown {
@@ -384,23 +385,44 @@ img {
   background-color: #ffffff;
 }
 
-.search-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 568px;
-  min-height: 395px;
-  margin-bottom: -395px;
+.main-content-map {
+  width: 100%;
+  min-height: 593px;
+  background-image: url("../img/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: -121px;
+  margin-top: -46px;
+}
+
+.modal {
+  color: #000000;
   background-color: #ffffff;
+}
+.modal-search-form {
+  position: absolute;
+  top: 295px;
+  padding: 55px;
+  width: 458px;
+}
+
+.search-form > div {
+  margin-bottom: 30px;
 }
 
 .search-form input[type="text"] {
+  width: 346px;
+  padding: 6px 13px;
   font: inherit;
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
+  box-sizing: border-box;
+}
+
+.search-form input.date-field {
+  padding-right: 40px;
 }
 
 .search-form input:hover {
@@ -409,51 +431,26 @@ img {
 
 .search-form input:focus {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
 }
 
 .date-field-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 30px;
+  position: relative;
 }
 
-.date-field-container:first-child {
-  margin-top: 55px;
-}
-
-.people-amount-container,
-.people-amount-field-container {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
-
-.people-amount-container {
-  margin-top: 30px;
-}
-
-.date-field-label {
-  margin-right: 17px;
-  padding-top: 6px;
-}
-
-.people-amount-field-label {
-  margin-right: 40px;
-}
-
-.child-amount-label {
-  margin-right: 26px;
-  margin-left: 50px;
-}
-
-.date-field {
-  width: 283px;
-  padding: 6px 15px;
+.search-form label {
+  display: inline-block;
+  width: 98px;
+  margin-top: 5px;
+  margin-right: 10px;
+  vertical-align: top;
 }
 
 .date-field-icon {
-  background-color: #f2f2f2;
+  position: absolute;
+  top: 6.5px;
+  right: 3px;
+  background-color: transparent;
   border: none;
 }
 
@@ -466,25 +463,46 @@ img {
   fill: #81b3d2;
 }
 
+.search-form input.people-amount-field {
+  width: 38px;
+}
+
+.people-amount-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.people-amount-field-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.people-amount-field-container label {
+  width: 86px;
+  margin-right: 25px;
+}
+
+.people-amount-field-container .child-amount-label {
+  text-align: right;
+}
+
 .people-amount {
   display: flex;
   flex-direction: row;
-}
-
-.people-amount-field {
-  width: 39px;
-  text-align: center;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  justify-content: space-between;
 }
 
 .people-amount-button {
+  width: 38px;
+  margin: 0;
   font: inherit;
   font-size: 21px;
   line-height: 26px;
+  min-height: 38px;
   color: #a9a9a9;
-  width: 38px;
-  text-align: center;
   background-color: #f2f2f2;
   border: none;
 }
@@ -496,16 +514,6 @@ img {
 
 .people-amount-button:active {
   color: #81b3d2;
-}
-
-.main-content-map {
-  width: 100%;
-  min-height: 593px;
-  background-image: url("../img/map.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: -121px;
-  margin-top: -46px;
 }
 
 .filters {
