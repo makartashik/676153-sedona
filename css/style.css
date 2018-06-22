@@ -812,10 +812,6 @@ img {
   min-height: 152px;
 }
 
-.hotel-name {
-  font-size: 21px;
-  color: #000000;
-}
 
 .hotels-list-item img {
   width: 134;
@@ -823,18 +819,27 @@ img {
 }
 
 .hotel-description-container {
-  display: flex;
-  flex-direction: column;
   width: 700px;
   min-height: 90px;
   margin-left: 31px;
 }
 
+.hotel-description-container h3 {
+  font-size: 21px;
+  margin: 0;
+  padding: 0;
+  margin-top: -5px;
+}
+
+.hotel-name {
+  color: #000000;
+}
+
 .hotel-type {
   display: flex;
   flex-direction: row;
-  margin-bottom: 7px;
-  margin-top: 7px;
+  margin-top: 8px;
+  margin-bottom: 12px;
 }
 
 .hotel-description:first-child {
@@ -845,11 +850,6 @@ img {
   padding: 5px 16px;
   margin-right: 3px;
   margin-top: 8px;
-}
-
-.hotel-description-container h3 {
-  padding: 0;
-  margin: 0;
 }
 
 .hotels-list-item-rating {
@@ -884,50 +884,23 @@ img {
   vertical-align: bottom;
 }
 
-.hotel-rating-info-amara::before {
+.hotel-rating-info::before {
   content: "";
   position: absolute;
   top: -65px;
   right: 0px;
   width: 87px;
   height: 17px;
-  background-image:
-              url("../img/icon-star.svg"),
-              url("../img/icon-star.svg"),
-              url("../img/icon-star.svg"),
-              url("../img/icon-star.svg");
-  background-position: 0 0, 23px 0, 46px 0, 69px 0;
-  background-repeat: no-repeat;
+  background-image: url("../img/icon-star.svg");
+  background-repeat: space;
 }
 
 .hotel-rating-info-desert::before {
-  content: "";
-  position: absolute;
-  top: -65px;
-  right: 0px;
   width: 64px;
-  height: 17px;
-  background-image:
-              url("../img/icon-star.svg"),
-              url("../img/icon-star.svg"),
-              url("../img/icon-star.svg");
-  background-position: 0 0, 23px 0, 46px 0;
-  background-repeat: no-repeat;
 }
 
 .hotel-rating-info-villas::before {
-  content: "";
-  position: absolute;
-  top: -65px;
-  right: 0px;
   width: 41px;
-  height: 17px;
-  background-image:
-              url("../img/icon-star.svg"),
-              url("../img/icon-star.svg"),
-              url("../img/icon-star.svg");
-  background-position: 0 0, 23px 0;
-  background-repeat: no-repeat;
 }
 
 .main-footer {
