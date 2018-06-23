@@ -394,9 +394,10 @@ img {
 .main-content-map {
   width: 100%;
   min-height: 593px;
-  background-image: url("../img/map.png");
+  background-image: url("../img/map.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #e9e5dc;
   margin-bottom: -120px;
 }
 
