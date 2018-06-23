@@ -93,7 +93,8 @@ img {
   opacity: 0.3;
 }
 
-.main-header-menu-current a {
+.main-header-menu-current a,
+.main-header-menu-current a:hover {
   color: #766357;
 }
 
@@ -764,7 +765,6 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 .results-sorting li {
@@ -805,6 +805,11 @@ img {
 
 .results-switch-item:active polyline,
 .results-switch-item:active polygon {
+  fill: #81b3d2;
+}
+
+.results-switch .current:hover polyline,
+.results-switch .current:hover polygon {
   fill: #81b3d2;
 }
 
