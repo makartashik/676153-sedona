@@ -32,8 +32,9 @@ img {
 }
 
 .main-header {
-  margin: 0 6%;
-  padding: 0;
+  position: relative;
+  margin: 0;
+  padding: 0 6%;
 }
 
 .main-navigation {
@@ -57,17 +58,18 @@ img {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+  flex-wrap: wrap;
   padding: 15px 0 16px;
   margin: 0;
   list-style: none;
 }
 
 .main-header-menu li {
-  width: 25%;
+  width: 20%;
 }
 
 .main-header-menu li:nth-child(2) {
-  margin-right: 9%;
+  margin-right: 11%;
 }
 
 .main-header-menu li:nth-child(3),
