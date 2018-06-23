@@ -614,6 +614,11 @@ img {
   background-image: url("../img/checkbox-off-disable.svg");
 }
 
+.filter-input-checkbox:focus + label::before{
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .hotel-cost-container {
   width: 31%;
 
