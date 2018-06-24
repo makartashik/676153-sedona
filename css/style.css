@@ -1016,9 +1016,16 @@ img {
   min-height: 150px;
   padding-left: 6.08%;
   padding-right: 6.08%;
+  padding-top: 29px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+         box-sizing: border-box;
 }
 
+.hotels-list-item:first-child {
+  padding-top: 27px;
+}
 
 .hotels-list-item img {
   width: 135px;
