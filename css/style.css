@@ -497,8 +497,9 @@ img {
 
 .modal-search-form {
   position: absolute;
-  top: 292px;
+  bottom: -394px;
   left: 50%;
+  min-height: 284px;
   transform: translateX(-284px);
   padding: 55px;
   width: 458px;
