@@ -67,6 +67,8 @@ img {
 
 .main-header-logo {
   position: absolute;
+  left: 50%;
+  transform: translateX(-69px);
 }
 
 .main-header-menu {
@@ -488,6 +490,8 @@ img {
 .modal-search-form {
   position: absolute;
   top: 292px;
+  left: 50%;
+  transform: translateX(-284px);
   padding: 55px;
   width: 458px;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 1, 1, 0.2);
