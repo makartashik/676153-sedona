@@ -1024,7 +1024,6 @@ img {
   width: 135px;
   min-width: 135px;
   height: 93px;
-
 }
 
 .hotel-description-container {
@@ -1044,6 +1043,15 @@ img {
   color: #000000;
 }
 
+.hotel-name:hover,
+.hotel-name:focus {
+  color: #81b3d2;
+}
+
+.hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .hotel-type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1052,12 +1060,20 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 220px;
   margin-top: 7px;
   margin-bottom: 13px;
 }
 
+.hotel-description {
+  width: 100%;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
 .hotel-description:first-child {
-  width: 115px;
+ margin-right: 10px;
 }
 
 .hotel-button {
@@ -1069,25 +1085,11 @@ img {
 .hotel-button:nth-child(2) {
   padding-left: 17px;
 }
+
 .hotels-list-item-rating {
   width: 100%;
   text-align: right;
   padding-top: 55px;
-}
-
-.hotel-name:hover,
-.hotel-name:focus {
-  color: #81b3d2;
-}
-
-.hotel-name:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.hotel-description {
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
 }
 
 .hotel-rating-info {
