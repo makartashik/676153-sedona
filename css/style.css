@@ -273,6 +273,8 @@ img {
   font-size: 21px;
   line-height: 21px;
   max-width: 100%;
+  -webkit-box-sizing: border-box;
+         box-sizing: border-box;
 }
 
 .feature-item-text h3,
@@ -290,13 +292,13 @@ img {
   color: #333333;
   line-height: 21px;
   font-weight: 400;
-  max-width: 100%;
+  max-width: 71.55%;
   padding-left: 14%;
   padding-right: 14.45%;
 }
 
 .feature-item-text h3 {
-  padding: 48px 31% 23px 31%;
+  padding: 48px 28% 23px 28%;
 }
 
 .feature-extra-item h3 {
@@ -314,8 +316,9 @@ img {
 }
 
 .feature-bridge p {
-  padding-left: 12%;
-  padding-right: 12%;
+  max-width: 80%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .feature-item-text-other p {
@@ -326,6 +329,11 @@ img {
 .feature-item-text-other:nth-child(3) p {
   padding-left: 18%;
   padding-right: 18%;
+}
+
+.feature-item-text-other:nth-child(3) h3 {
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .feature-extra-item img {
@@ -923,7 +931,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 278px;
+  width: 280px;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
