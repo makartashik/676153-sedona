@@ -495,6 +495,7 @@ img {
 }
 
 .modal-search-form {
+  display: none;
   position: absolute;
   bottom: -394px;
   left: 50%;
@@ -639,6 +640,11 @@ img {
 
 .people-amount-button:active {
   color: #81b3d2;
+}
+
+.modal-form-show {
+  display: block;
+
 }
 
 .filters {
