@@ -10,7 +10,7 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-    storage = localStorage.getItem("adults");
+    storage = localStorage.getItem("adults", "child");
 } catch (err) {
     isStorageSupport = false;
 }
@@ -21,6 +21,7 @@ button.addEventListener("click", function (evt) {
   arrival.focus();
   if (storage) {
       adults.value = adults;
+      child.value = child;
     }
   }
 );
@@ -52,6 +53,7 @@ form.addEventListener("submit", function (evt) {
       }  else {
           if (isStorageSupport) {
             localStorage.setItem("adults", adults.value);
+            localStorage.setItem("child", child.value);
         }
       }
 });
