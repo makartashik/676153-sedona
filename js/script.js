@@ -6,12 +6,23 @@ var arrival = form.querySelector("[name=arrival-date]");
 var depart = form.querySelector("[name=departure-date]");
 var adults = form.querySelector("[name=adults-amount]");
 var child = form.querySelector("[name=child-amount]");
+var isStorageSupport = true;
+var storage = "";
+
+try {
+    storage = localStorage.getItem("adults");
+} catch (err) {
+    isStorageSupport = false;
+}
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
   blockForm.classList.toggle("modal-form-show");
   arrival.focus();
+  if (storage) {
+      adults.value = adults;
     }
+  }
 );
 
 form.addEventListener("submit", function (evt) {
@@ -38,5 +49,9 @@ form.addEventListener("submit", function (evt) {
        child.classList.remove("form-error");
        child.offsetWidth = child.offsetWidth;
        child.classList.add("form-error");
+      }  else {
+          if (isStorageSupport) {
+            localStorage.setItem("adults", adults.value);
+        }
       }
 });
