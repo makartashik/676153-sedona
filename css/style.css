@@ -491,6 +491,12 @@ img {
   z-index: 1;
 }
 
+.main-content-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
 .modal {
   color: #000000;
   background-color: #ffffff;
@@ -505,6 +511,7 @@ img {
   transform: translateX(-284px);
   padding: 55px;
   width: 458px;
+  z-index: 3;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 1, 1, 0.2);
           box-shadow: 0px 0px 30px 0px rgba(0, 1, 1, 0.2);
 }
