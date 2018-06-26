@@ -527,6 +527,7 @@ img {
 
 .search-form input.date-field {
   padding-right: 40px;
+  min-height: 38px;
 }
 
 .search-form input:hover {
