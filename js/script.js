@@ -10,6 +10,7 @@ var child = form.querySelector("[name=child-amount]");
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
   blockForm.classList.toggle("modal-form-show");
+  arrival.focus();
     }
 );
 
