@@ -483,6 +483,7 @@ img {
 .main-content-map {
   position: relative;
   width: 100%;
+  min-width: 100%;
   min-height: 586px;
   background-image: url("../img/map.jpg");
   background-size: cover;
@@ -495,6 +496,8 @@ img {
 
 .main-content-map iframe {
   position: relative;
+  width: 100%;
+  min-width: 100%;
   z-index: 2;
   border: none;
 }
@@ -510,11 +513,12 @@ img {
   top: 0px;
   left: 50%;
   min-height: 284px;
-  -webkit-transform: translateX(-284px);
-      -ms-transform: translateX(-284px);
-          transform: translateX(-284px);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   padding: 55px;
   width: 458px;
+  min-width: 458px;
   z-index: 3;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 1, 1, 0.2);
           box-shadow: 0px 0px 30px 0px rgba(0, 1, 1, 0.2);
@@ -659,10 +663,12 @@ img {
 @-webkit-keyframes move {
   0% {
     -webkit-transform: translate(-50%, -100%) scaleY(0);
+        -ms-transform: translate(-50%, -100%) scaleY(0);
             transform: translate(-50%, -100%) scaleY(0);
     }
   100% {
     -webkit-transform: translate(-50%, 0) scaleY(1);
+        -ms-transform: translate(-50%, 0) scaleY(1);
             transform: translate(-50%, 0) scaleY(1);
     }
 }
@@ -670,10 +676,12 @@ img {
 @keyframes move {
   0% {
     -webkit-transform: translate(-50%, -100%) scaleY(0);
+        -ms-transform: translate(-50%, -100%) scaleY(0);
             transform: translate(-50%, -100%) scaleY(0);
     }
   100% {
     -webkit-transform: translate(-50%, 0) scaleY(1);
+        -ms-transform: translate(-50%, 0) scaleY(1);
             transform: translate(-50%, 0) scaleY(1);
     }
 }
