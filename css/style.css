@@ -644,7 +644,18 @@ img {
 
 .modal-form-show {
   display: block;
+  animation-name: move;
+  animation-duration: 1s;
 
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, -100%) scaleY(0);
+    }
+  100% {
+    transform: translate(-50%, 0) scaleY(1);
+    }
 }
 
 .filters {
