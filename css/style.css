@@ -68,7 +68,9 @@ img {
 .main-header-logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-69px);
+  -webkit-transform: translateX(-69px);
+      -ms-transform: translateX(-69px);
+          transform: translateX(-69px);
 }
 
 .main-header-menu {
@@ -508,7 +510,9 @@ img {
   top: 0px;
   left: 50%;
   min-height: 284px;
-  transform: translateX(-284px);
+  -webkit-transform: translateX(-284px);
+      -ms-transform: translateX(-284px);
+          transform: translateX(-284px);
   padding: 55px;
   width: 458px;
   z-index: 3;
@@ -652,13 +656,36 @@ img {
   color: #81b3d2;
 }
 
-@keyframes move {
+@-webkit-keyframes move {
   0% {
-    transform: translate(-50%, -100%) scaleY(0);
+    -webkit-transform: translate(-50%, -100%) scaleY(0);
+            transform: translate(-50%, -100%) scaleY(0);
     }
   100% {
-    transform: translate(-50%, 0) scaleY(1);
+    -webkit-transform: translate(-50%, 0) scaleY(1);
+            transform: translate(-50%, 0) scaleY(1);
     }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate(-50%, -100%) scaleY(0);
+            transform: translate(-50%, -100%) scaleY(0);
+    }
+  100% {
+    -webkit-transform: translate(-50%, 0) scaleY(1);
+            transform: translate(-50%, 0) scaleY(1);
+    }
+}
+
+@-webkit-keyframes error {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #ff0000;
+    opacity: 0.6;
+  }
 }
 
 @keyframes error {
@@ -673,14 +700,19 @@ img {
 
 .modal-form-show {
   display: block;
-  animation-name: move;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 .form-error {
-  animation-name: error;
-  animation-duration: 0.6s;
+  -webkit-animation-name: error;
+          animation-name: error;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .filters {
@@ -974,7 +1006,8 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 280px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
