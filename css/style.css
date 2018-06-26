@@ -642,13 +642,6 @@ img {
   color: #81b3d2;
 }
 
-.modal-form-show {
-  display: block;
-  animation-name: move;
-  animation-duration: 1s;
-
-}
-
 @keyframes move {
   0% {
     transform: translate(-50%, -100%) scaleY(0);
@@ -656,6 +649,26 @@ img {
   100% {
     transform: translate(-50%, 0) scaleY(1);
     }
+}
+
+@keyframes error {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+}
+
+.modal-form-show {
+  display: block;
+  animation-name: move;
+  animation-duration: 1s;
+}
+
+.form-error {
+  animation-name: error;
+  animation-duration: 0.6s;
 }
 
 .filters {
