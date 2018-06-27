@@ -540,6 +540,28 @@ img {
           box-sizing: border-box;
 }
 
+.search-form input[type="text"]::-webkit-input-placeholder {
+   color: #000000;
+}
+
+.search-form input[type="text"]::-moz-placeholder {
+   color: #000000;
+   opacity: 1;
+}
+
+.search-form input[type="text"]:-ms-input-placeholder {
+   color: #000000;
+}
+
+.search-form input[type="text"]:-moz-placeholder {
+   color: #000000;
+   opacity: 1;
+}
+
+.search-form input[type="text"]::placeholder {
+   color: #000000;
+}
+
 .search-form input.date-field {
   padding-right: 40px;
   min-height: 38px;
