@@ -76,7 +76,6 @@ moreFirst.addEventListener("click", function (event) {
     }
     var num = parseInt(adults.value, 10);
     adults.value = num + 1;
-
 });
 
 moreSecond.addEventListener("click", function (event) {
@@ -86,5 +85,4 @@ moreSecond.addEventListener("click", function (event) {
     }
     var num = parseInt(child.value, 10);
     child.value = num + 1;
-
 });
