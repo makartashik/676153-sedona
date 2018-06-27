@@ -12,6 +12,8 @@ var storageCh = "";
 
 var lessFirst = document.querySelector("[id=less-first]");
 var lessSecond = document.querySelector("[id=less-second]");
+var moreFirst = document.querySelector("[id=more-first]");
+var moreSecond = document.querySelector("[id=more-second]");
 
 try {
     storageAd = localStorage.getItem("adults");
@@ -53,16 +55,36 @@ form.addEventListener("submit", function (evt) {
 
 lessFirst.addEventListener("click", function (event) {
 	  event.preventDefault();
-    parseInt("adults".value, 10)
+    var num = parseInt(adults.value, 10);
     if (adults.value >= 2) {
-        adults.value = adults.value - 1;
+        adults.value = num - 1;
     }
 });
 
 lessSecond.addEventListener("click", function (event) {
   	event.preventDefault();
-    parseInt("child".value, 10)
+    var num = parseInt(child.value, 10);
     if (child.value >= 1) {
-        child.value = child.value - 1;
+        child.value = num - 1;
     }
+});
+
+moreFirst.addEventListener("click", function (event) {
+	  event.preventDefault();
+    if (!adults.value) {
+       adults.value = 0;
+    }
+    var num = parseInt(adults.value, 10);
+    adults.value = num + 1;
+
+});
+
+moreSecond.addEventListener("click", function (event) {
+  	event.preventDefault();
+    if (!child.value) {
+       child.value = 0;
+    }
+    var num = parseInt(child.value, 10);
+    child.value = num + 1;
+
 });
