@@ -34,32 +34,16 @@ form.addEventListener("submit", function (evt) {
   if (!arrival.value || !depart.value || !adults.value || !child.value) {
       evt.preventDefault();
       console.log("Заполните, пожалуйста, все поля");
+      blockForm.classList.remove("form-error");
+      blockForm.offsetWidth = blockForm.offsetWidth;
+      blockForm.classList.add("form-error");
     }
-  if (!arrival.value) {
-      arrival.classList.remove("form-error");
-      arrival.offsetWidth = arrival.offsetWidth;
-      arrival.classList.add("form-error");
+  else {
+        if (isStorageSupport) {
+          localStorage.setItem("adults", adults.value);
+      }
+        if (isStorageSupport) {
+          localStorage.setItem("child", child.value);
+      }
     }
-  if (!depart.value) {
-       depart.classList.remove("form-error");
-       depart.offsetWidth = depart.offsetWidth;
-       depart.classList.add("form-error");
-      }
-  if (!adults.value) {
-       adults.classList.remove("form-error");
-       adults.offsetWidth = adults.offsetWidth;
-       adults.classList.add("form-error");
-      }
-  if (!child.value) {
-       child.classList.remove("form-error");
-       child.offsetWidth = child.offsetWidth;
-       child.classList.add("form-error");
-      }  else {
-          if (isStorageSupport) {
-            localStorage.setItem("adults", adults.value);
-        }
-          if (isStorageSupport) {
-            localStorage.setItem("child", child.value);
-        }
-      }
 });

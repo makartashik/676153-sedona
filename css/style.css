@@ -707,22 +707,48 @@ img {
 }
 
 @-webkit-keyframes error {
-  0% {
-    background-color: #ffffff;
-  }
+  0%,
   100% {
-    background-color: #ff0000;
-    opacity: 0.6;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes error {
-  0% {
-    background-color: #ffffff;
-  }
+  0%,
   100% {
-    background-color: #ff0000;
-    opacity: 0.6;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
