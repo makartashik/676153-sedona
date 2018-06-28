@@ -22,6 +22,8 @@ try {
     isStorageSupport = false;
 }
 
+blockForm.classList.remove("modal-form-show");
+
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
   blockForm.classList.toggle("modal-form-show");
