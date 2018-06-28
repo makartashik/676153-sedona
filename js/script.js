@@ -10,10 +10,10 @@ var isStorageSupport = true;
 var storageAd = "";
 var storageCh = "";
 
-var lessFirst = document.querySelector("[id=less-first]");
-var lessSecond = document.querySelector("[id=less-second]");
-var moreFirst = document.querySelector("[id=more-first]");
-var moreSecond = document.querySelector("[id=more-second]");
+var adultsLess = document.querySelector("[id=adults-less]");
+var childLess = document.querySelector("[id=child-less]");
+var adultsMore = document.querySelector("[id=adults-more]");
+var childMore = document.querySelector("[id=child-more]");
 
 try {
     storageAd = localStorage.getItem("adults");
@@ -53,36 +53,36 @@ form.addEventListener("submit", function (evt) {
     }
 });
 
-lessFirst.addEventListener("click", function (event) {
+adultsLess.addEventListener("click", function (event) {
 	  event.preventDefault();
     var num = parseInt(adults.value, 10);
-    if (adults.value >= 2) {
+    if (num >= 2) {
         adults.value = num - 1;
     }
 });
 
-lessSecond.addEventListener("click", function (event) {
+childLess.addEventListener("click", function (event) {
   	event.preventDefault();
     var num = parseInt(child.value, 10);
-    if (child.value >= 1) {
+    if (num >= 1) {
         child.value = num - 1;
     }
 });
 
-moreFirst.addEventListener("click", function (event) {
+adultsMore.addEventListener("click", function (event) {
 	  event.preventDefault();
-    if (!adults.value) {
-       adults.value = 0;
-    }
     var num = parseInt(adults.value, 10);
+    if (!num) {
+       num = 0;
+    }
     adults.value = num + 1;
 });
 
-moreSecond.addEventListener("click", function (event) {
+childMore.addEventListener("click", function (event) {
   	event.preventDefault();
-    if (!child.value) {
-       child.value = 0;
-    }
     var num = parseInt(child.value, 10);
+    if (!num) {
+       num = 0;
+    }
     child.value = num + 1;
 });
